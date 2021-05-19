@@ -7,10 +7,15 @@ public class Main {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int numOfTests = Integer.parseInt(in.readLine());
 
+        for(int i = 0; i < numOfTests; i++) {
+            System.out.println(KamenetskyFormula(Integer.parseInt(in.readLine())));
+        }
+
+        /*
         in.lines()
                 .limit(numOfTests)
                 .map(n -> Integer.parseInt(n))
-                .forEach(n -> System.out.println(KamenetskyFormula(n)));
+                .forEach(n -> System.out.println(KamenetskyFormula(n)));*/
     }
 
     private static long KamenetskyFormula(int n) {
